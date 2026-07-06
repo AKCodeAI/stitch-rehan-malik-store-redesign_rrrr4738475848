@@ -1,0 +1,27 @@
+# Dependencies
+website/node_modules/
+
+# Next.js build output
+website/.next/
+website/out/
+
+# Vercel
+website/.vercel
+
+# Environment files
+.env*
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+*.log
+
+# TypeScript
+*.tsbuildinfo
+website/next-env.d.ts
+
+# Large downloaded reference images (re-downloadable from source)
+image_from_*/

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>REHAN MALIK | Aspirational Luxury</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#690000",
+                        "graphite-gray": "#262626",
+                        "surface-dim": "#131313",
+                        "secondary-fixed": "#ffdad4",
+                        "on-tertiary": "#313030",
+                        "background": "#131313",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-container": "#ff9a8a",
+                        "on-primary": "#3c2f00",
+                        "surface": "#131313",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed-variant": "#920703",
+                        "onyx-black": "#0A0A0A",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed-dim": "#ffb4a8",
+                        "primary-container": "#d4af37",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#410000",
+                        "tertiary-container": "#b4b2b2",
+                        "on-tertiary-container": "#454544",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-primary-container": "#554300",
+                        "primary": "#f2ca50",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-surface-variant": "#d0c5af",
+                        "ivory-white": "#F5F5F5",
+                        "outline-variant": "#4d4635",
+                        "metallic-gold": "#D4AF37",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#ffe088",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-container-highest": "#353534",
+                        "on-primary-fixed": "#241a00",
+                        "surface-tint": "#e9c349",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "tertiary": "#d0cdcd",
+                        "secondary-container": "#920703",
+                        "inverse-primary": "#735c00",
+                        "outline": "#99907c",
+                        "on-primary-fixed-variant": "#574500",
+                        "deep-crimson": "#8B0000",
+                        "surface-bright": "#3a3939",
+                        "surface-variant": "#353534",
+                        "secondary": "#ffb4a8",
+                        "tertiary-fixed": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "stack-md": "16px",
+                        "container-max": "1440px",
+                        "section-gap": "120px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "title-lg": ["Manrope"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "label-caps": ["Manrope"],
+                        "headline-sm": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-sm": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            transition: all 0.3s ease;
+        }
+        body {
+            background-color: #0A0A0A;
+            color: #F5F5F5;
+            overflow-x: hidden;
+        }
+        .glass-overlay {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-title {
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+        .product-img {
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-body-lg">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-onyx-black/80 backdrop-blur-md border-b border-graphite-gray/30">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-stack-lg">
+<a class="font-display-lg text-headline-md tracking-tighter text-metallic-gold" href="/">REHAN MALIK</a>
+<div class="hidden md:flex gap-stack-lg ml-stack-lg">
+<a class="font-label-caps text-label-caps tracking-widest uppercase text-metallic-gold border-b border-metallic-gold pb-1 transition-all duration-300" href="/">Home</a>
+<a class="font-label-caps text-label-caps tracking-widest uppercase text-ivory-white/70 hover:text-metallic-gold transition-colors duration-300" href="/collections/all">Fragrances</a>
+<a class="font-label-caps text-label-caps tracking-widest uppercase text-ivory-white/70 hover:text-metallic-gold transition-colors duration-300" href="/collections/watches">Watches</a>
+<a class="font-label-caps text-label-caps tracking-widest uppercase text-ivory-white/70 hover:text-metallic-gold transition-colors duration-300" href="/contact">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="text-metallic-gold hover:opacity-80 transition-all">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="text-metallic-gold hover:opacity-80 transition-all">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="text-metallic-gold hover:opacity-80 transition-all relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-deep-crimson text-[10px] w-4 h-4 rounded-full flex items-center justify-center text-white">0</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<!-- STITCH_SHADER_START:ANIMATION_26 class="absolute inset-0 w-full h-full z-0" -->
+<div class="absolute inset-0 w-full h-full z-0" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_26" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_26');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Luxury liquid gold flow
+    float t = u_time * 0.2;
+    vec2 p = uv * 3.0;
+    
+    for(int i=1; i<4; i++) {
+        float fi = float(i);
+        p += vec2(0.7 / fi * sin(fi * p.y + t + 0.3 * fi) + 0.8, 
+                  0.4 / fi * sin(fi * p.x + t + 0.3 * fi) + 1.6);
+    }
+    
+    float col = 0.5 + 0.5 * sin(p.x + p.y);
+    
+    // Gold palette
+    vec3 gold = vec3(0.83, 0.68, 0.21);
+    vec3 darkGold = vec3(0.4, 0.3, 0.1);
+    vec3 black = vec3(0.05, 0.05, 0.05);
+    
+    vec3 finalCol = mix(black, darkGold, col);
+    finalCol = mix(finalCol, gold, pow(col, 3.0));
+    
+    gl_FragColor = vec4(finalCol, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_26 -->
+<div class="absolute inset-0 bg-gradient-to-b from-onyx-black/60 via-transparent to-onyx-black z-10"></div>
+<div class="relative z-20 text-center px-margin-mobile">
+<span class="font-label-caps text-label-caps tracking-[0.3em] uppercase text-metallic-gold mb-stack-md block animate-pulse">Elegance in Every Essence</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg hero-title mb-stack-lg">REHAN MALIK</h1>
+<p class="font-headline-sm text-headline-sm text-ivory-white/80 max-w-2xl mx-auto mb-section-gap leading-relaxed italic">Luxury Redefined</p>
+<div class="flex flex-col md:flex-row gap-gutter justify-center items-center">
+<a class="bg-metallic-gold text-onyx-black font-label-caps text-label-caps px-12 py-5 tracking-widest uppercase hover:bg-ivory-white transition-all duration-500 scale-95 active:opacity-80" href="#fragrances">Shop Collections</a>
+<a class="border border-metallic-gold text-metallic-gold font-label-caps text-label-caps px-12 py-5 tracking-widest uppercase hover:bg-metallic-gold/10 transition-all duration-500 scale-95 active:opacity-80" href="#watches">Explore Watches</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-metallic-gold text-3xl">expand_more</span>
+</div>
+</section>
+<!-- Fragrance Showcase: The Scent Chapter -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="fragrances">
+<div class="flex flex-col md:flex-row justify-between items-end mb-section-gap">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps text-metallic-gold mb-stack-sm block">Exquisite Perfumery</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-ivory-white">The Scent Chapter</h2>
+</div>
+<a class="font-label-caps text-label-caps text-metallic-gold hover:underline decoration-1 underline-offset-8 transition-all" href="/collections/all">View All Collections</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="product-card group relative flex flex-col items-center">
+<div class="relative overflow-hidden w-full aspect-[3/4] mb-stack-lg glass-overlay">
+<img alt="Nexus by RM" class="product-img w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvzNefxS9LIIjyjpmMns3vBQZDaqWTGG2YNsbS5a10l7g_Bn5UXTabdgkCTiLzQEM4MC3RmqlGehfxgHGsZeY1dKraM0b_weAzlJiLki_Sg6QJoWNmMQhPNtLBR2cOwwqVntuk4sjOd6PJTnvW2IhrQ7HRIqAbjZz5XSOh3RpGreVvhgR0m1u-1FDIbpfJlJbcb7HXcjL8ax3NA0ZJXblgc6QyT04JKeo5EIXBoHQPq12sQ-NepBuea-Cap"/>
+<div class="absolute top-4 left-4 bg-deep-crimson px-3 py-1 text-white font-label-caps text-[10px] uppercase">Sale</div>
+</div>
+<h3 class="font-display-lg text-headline-sm text-ivory-white mb-stack-sm">Nexus by RM</h3>
+<p class="font-body-sm text-metallic-gold mb-stack-md">Rs.2,750.00 <span class="text-ivory-white/30 line-through ml-2">Rs.3,300.00</span></p>
+<button class="font-label-caps text-label-caps border border-graphite-gray px-8 py-3 text-ivory-white/70 group-hover:border-metallic-gold group-hover:text-metallic-gold transition-all duration-300">Quick Add</button>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card group relative flex flex-col items-center">
+<div class="relative overflow-hidden w-full aspect-[3/4] mb-stack-lg glass-overlay">
+<img alt="Melody by RM" class="product-img w-full h-full object-cover opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLtbRQPsYtnEUhtFqdu3krveZJM9_vFRtKaU3k4aa_YSRHmgavay6vIu7bI_XhwA5l0gmQHfMHtxacbnFg_0wVHMziB5ysVafnnCgmER3bB9mqicrr6Qy2RdxgY76X3Bkf3pYYcaJUSHUvvtYA-8Is8abF3yCSTaNqObi8lXfuGkCO5xucXp23jPaDbf1-Rc9hfttzZGmJnrE_hD7sxpf-G4rICh-CAVYMfAZ0S2THI-TGPy-klaVLKBW7A"/>
+<div class="absolute top-4 left-4 bg-graphite-gray/80 px-3 py-1 text-white font-label-caps text-[10px] uppercase">Sold Out</div>
+</div>
+<h3 class="font-display-lg text-headline-sm text-ivory-white mb-stack-sm">Melody by RM</h3>
+<p class="font-body-sm text-metallic-gold mb-stack-md">Rs.2,900.00</p>
+<button class="font-label-caps text-label-caps border border-graphite-gray px-8 py-3 text-ivory-white/40 cursor-not-allowed">Out of Stock</button>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card group relative flex flex-col items-center">
+<div class="relative overflow-hidden w-full aspect-[3/4] mb-stack-lg glass-overlay">
+<img alt="Elixir by RM" class="product-img w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsBvmC2NA3ocP5W9F7MfY7hxxAk4LxBBloVs2ODp1pl95JA8Pji9zZ599UNPRKZbSEi4dqk1oWguX5CHqCJdIuOMTFniHmGUaP7BzygkCP05Jf9TqBV6Wn1w1KgUDIbdvhXSi4XI2WowbtM-SBaJfwHBBEq9NXlmMbfp9ZEt4QH6Dk_fE6F2FCY7eQPrU_gQhFJJWXzHisKdWZ7ndalVCRE4Q73Ds46jpl-UKlysF3AOQUulaGY3gvzm1Ya"/>
+</div>
+<h3 class="font-display-lg text-headline-sm text-ivory-white mb-stack-sm">Elixir by RM</h3>
+<p class="font-body-sm text-metallic-gold mb-stack-md">Rs.3,750.00</p>
+<button class="font-label-caps text-label-caps border border-graphite-gray px-8 py-3 text-ivory-white/70 group-hover:border-metallic-gold group-hover:text-metallic-gold transition-all duration-300">Quick Add</button>
+</div>
+</div>
+</section>
+<!-- Watch Collection: Timeless Precision -->
+<section class="bg-surface-container-low py-section-gap overflow-hidden" id="watches">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div class="scroll-reveal active">
+<span class="font-label-caps text-label-caps text-metallic-gold mb-stack-sm block">Heritage &amp; Craft</span>
+<h2 class="font-display-lg text-display-lg text-ivory-white mb-stack-lg leading-tight">Timeless<br/>Precision</h2>
+<p class="font-body-lg text-ivory-white/60 mb-section-gap max-w-md leading-relaxed">
+                        Discover a curation of timepieces that embody the pinnacle of horological excellence. Every tick is a testament to our commitment to craftsmanship and absolute luxury.
+                    </p>
+<div class="flex gap-gutter">
+<div class="group cursor-pointer">
+<div class="overflow-hidden w-48 h-64 mb-stack-md">
+<img alt="Cartier Leather Strap" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLvAuizUtfNcHB1qxSIMwCEYLv_UqxNe-_uZtt50xirrnX_cvflUHC2mi8ky_aQ-htY7Za75ro_ovZlY-5Cchm4e_tAXjQ_QZ0qmGDffcbzOTYRRs0MjJW2-G6puHEfg1-hWmMhJuA3Y7UjaXtxG4E10wx4MvANlGojvYCYfziEMVQYrcqNk4Jc-fW6XzU8nTb5kqkdqDq1qx1odUwSYaV0uhdFskfZEi_GhZZ9gg8RRByIVTRm_RoEAvRdq"/>
+</div>
+<span class="font-label-caps text-[10px] text-metallic-gold block uppercase mb-1">Old Money Edition</span>
+<span class="font-body-sm text-ivory-white/80 block">Cartier Woody Brown</span>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden w-48 h-64 mb-stack-md">
+<img alt="Rolex Stone Edition" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLswBromz4wxwae6QU-buS4HQrGJPhjHociLbQ17Z2w1kSOHqfLoDpVr-4xa-Anordg0M-7a1xJbIMn966I0_2546Qu4Bvjf1Sp5NoVGtfQHuqUC0_CSJMJpERG6NLwtKnt80VA3oGlSZEk6-lUK94hYzQV2ApiNeYAsoJnxgYk4bkTDtC1O0hrXlFpproitF40zxLNgwzMBKObxHNjCTMw03c2Te3mVnCv_kqAmtWocuHgM1VIosSz1sDok"/>
+</div>
+<span class="font-label-caps text-[10px] text-metallic-gold block uppercase mb-1">Elite Stone Series</span>
+<span class="font-body-sm text-ivory-white/80 block">Silver A+ Quality</span>
+</div>
+</div>
+</div>
+<div class="relative h-[800px] flex justify-end">
+<div class="absolute -right-20 top-0 w-full h-full bg-metallic-gold/5 blur-[120px] rounded-full"></div>
+<img alt="Featured Watch" class="relative z-10 h-full w-auto object-cover border-[1px] border-graphite-gray shadow-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLvAuizUtfNcHB1qxSIMwCEYLv_UqxNe-_uZtt50xirrnX_cvflUHC2mi8ky_aQ-htY7Za75ro_ovZlY-5Cchm4e_tAXjQ_QZ0qmGDffcbzOTYRRs0MjJW2-G6puHEfg1-hWmMhJuA3Y7UjaXtxG4E10wx4MvANlGojvYCYfziEMVQYrcqNk4Jc-fW6XzU8nTb5kqkdqDq1qx1odUwSYaV0uhdFskfZEi_GhZZ9gg8RRByIVTRm_RoEAvRdq"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story: Gentle - legacy of RM -->
+<section class="py-section-gap relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-fixed opacity-10 grayscale" data-alt="Abstract atmospheric macro shot of gold liquid droplets suspended in a deep obsidian oil, illuminated by dramatic side lighting that creates highlights and deep shadows. The visual aesthetic is intensely luxurious and minimalist, using a palette of metallic gold and onyx black to evoke the essence of premium fragrance ingredients." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsLPzior13AAB9rqE7vNxovBDJ-G5wNa3l8kjAcUcCOpYzOnMiir1OZ6W1_WUHXPE0yvTRZ74ifi6sLj4YcrCj7BRZDwoE2Y1a8Kwk-MbH4Orulhu2lZqfgAq09DCBWH836FSmIW2R2trkoA-9FMK9MdHQLOzTUQwK2iEaSYcBEHhuB0K9ptH4Io4zSRQxDqpB9_3veRO0UfH5wMf_Acl31a_88wQQHRusv9pK_sn3qKE-AflIzl8FdwHaU0efcORJJ1IEmZdU4dlF')"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7">
+<img alt="Gentle - legacy of RM" class="w-full h-auto object-cover border border-graphite-gray shadow-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLt9Ymi83wKPFyLmr6uRxiJJAqs9T5sNn4RoMZBd0Vq59Vb27T71aGNY8NAVB5j-pS2RxpRvYx9q3elEVDKnlpUdfH3i2CW-UjbY6tjd9XODC9_qDdde-zA3Ici6boNd-zFLRYHZ_UhVP6lzOzXotG96A2SM7gIS3QVTOVhPw7XLMhn4nyWgZBDgDx8RuzGC82AMH82_4ZUUfgXZZc1snStEADiMhbE0mKb3_X-DT6z0KvDTpkxDM6X1SxAL"/>
+</div>
+<div class="lg:col-span-5 px-margin-mobile lg:px-stack-lg">
+<img alt="Logo" class="w-16 mb-stack-lg" src="https://lh3.googleusercontent.com/aida/AP1WRLtP58t6TmOCCIPb2CAhxeP5DCMW_k76pW33Bb32fNDM3iW-gFSLH20gJzpbcOdRUXl5EZyXpkEQ3Agw_eVCnJ13p8e2ELzeW9IL1OaPHpn1JY7tdnHn1Ke2lxbMFO2oHOdK1t-8TFYF65B4thSyH6cJ_7EEDikplEEVnuXexqbT9yPptNfAbivvYdI4ubVNStmyi9Xbzu-TiJ-iDQkC0KifkwtRNsq6__gVX2JcqU-pWubOcN7eAQCqT78"/>
+<h2 class="font-display-lg text-display-lg text-metallic-gold mb-stack-lg">Gentle - Legacy of RM</h2>
+<p class="font-body-lg text-ivory-white/80 mb-stack-lg leading-relaxed first-letter:text-5xl first-letter:font-display-lg first-letter:mr-3 first-letter:float-left">
+                        Gentle — A refined woody-aromatic fragrance that opens with the crisp freshness of <b>juniper berries</b> and a touch of <b>nutmeg</b>. 
+                    </p>
+<p class="font-body-lg text-ivory-white/80 mb-section-gap leading-relaxed">
+                        At its heart lies the subtle spice of <b>coriander</b>, resting on a smooth, lasting base of <b>musk</b> and <b>cedar</b>, creating a calm yet confident scent that speaks softly but leaves a lasting impression.
+                    </p>
+<div class="flex items-center gap-stack-lg">
+<a class="bg-metallic-gold text-onyx-black px-12 py-5 font-label-caps text-label-caps tracking-widest uppercase hover:bg-ivory-white transition-all" href="#">Discover the Notes</a>
+<div class="h-[1px] w-24 bg-metallic-gold/30"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof: Review Slider -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="mb-section-gap">
+<div class="flex justify-center mb-stack-sm">
+<span class="material-symbols-outlined text-metallic-gold" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-metallic-gold" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-metallic-gold" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-metallic-gold" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-metallic-gold" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h2 class="font-display-lg text-headline-md text-ivory-white mb-stack-sm">Let customers speak for us</h2>
+<p class="font-label-caps text-label-caps text-metallic-gold tracking-widest">From 214 Verified Reviews</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter text-left">
+<!-- Testimonial 1 -->
+<div class="glass-overlay p-stack-lg border-b-2 border-b-metallic-gold/0 hover:border-b-metallic-gold transition-all duration-500">
+<p class="font-body-lg text-ivory-white/90 italic mb-stack-lg leading-relaxed">"Never trust on negative reviews... try first and share your own opinions. Mine: really gud... one of the best."</p>
+<div class="flex items-center gap-stack-md">
+<div class="w-10 h-10 rounded-full bg-graphite-gray flex items-center justify-center font-display-lg text-metallic-gold">F</div>
+<div>
+<p class="font-label-caps text-label-caps text-metallic-gold uppercase">M Faizan</p>
+<p class="text-[10px] text-ivory-white/40">Verified Buyer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-overlay p-stack-lg border-b-2 border-b-metallic-gold/0 hover:border-b-metallic-gold transition-all duration-500 scale-105 bg-onyx-black border-metallic-gold/20">
+<p class="font-body-lg text-ivory-white/90 italic mb-stack-lg leading-relaxed">"Perfume is very good and have awesome fragrance. High concentration for an intense, long-lasting experience."</p>
+<div class="flex items-center gap-stack-md">
+<div class="w-10 h-10 rounded-full bg-graphite-gray flex items-center justify-center font-display-lg text-metallic-gold">A</div>
+<div>
+<p class="font-label-caps text-label-caps text-metallic-gold uppercase">Anonymous</p>
+<p class="text-[10px] text-ivory-white/40">Verified Buyer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-overlay p-stack-lg border-b-2 border-b-metallic-gold/0 hover:border-b-metallic-gold transition-all duration-500">
+<p class="font-body-lg text-ivory-white/90 italic mb-stack-lg leading-relaxed">"Wow this is amazing fragrance I also like this brand. Each fragrance is a reflection of Rehan Malik charisma."</p>
+<div class="flex items-center gap-stack-md">
+<div class="w-10 h-10 rounded-full bg-graphite-gray flex items-center justify-center font-display-lg text-metallic-gold">U</div>
+<div>
+<p class="font-label-caps text-label-caps text-metallic-gold uppercase">Usama Murtaza</p>
+<p class="text-[10px] text-ivory-white/40">Verified Buyer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap px-margin-desktop max-w-3xl mx-auto">
+<h2 class="font-display-lg text-headline-md text-center mb-section-gap text-ivory-white">Frequently Asked Questions</h2>
+<div class="space-y-stack-md">
+<div class="border-b border-graphite-gray pb-stack-md">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group">
+<span class="font-title-lg text-title-lg text-ivory-white group-hover:text-metallic-gold transition-colors">What is the longevity of your perfumes?</span>
+<span class="material-symbols-outlined text-metallic-gold">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-2">
+<p class="font-body-sm text-ivory-white/60 py-stack-md">Our perfumes are crafted with high-quality ingredients and typically last 8 to 12 hours, depending on skin type and weather conditions.</p>
+</div>
+</div>
+<div class="border-b border-graphite-gray pb-stack-md">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group">
+<span class="font-title-lg text-title-lg text-ivory-white group-hover:text-metallic-gold transition-colors">When will I get my order?</span>
+<span class="material-symbols-outlined text-metallic-gold">expand_more</span>
+</button>
+</div>
+<div class="border-b border-graphite-gray pb-stack-md">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group">
+<span class="font-title-lg text-title-lg text-ivory-white group-hover:text-metallic-gold transition-colors">What ingredients are used in your perfumes?</span>
+<span class="material-symbols-outlined text-metallic-gold">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-onyx-black border-t border-graphite-gray w-full pt-section-gap pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<a class="font-display-lg text-headline-sm text-metallic-gold block mb-stack-lg" href="/">REHAN MALIK</a>
+<p class="font-body-sm text-body-sm text-ivory-white/50 leading-relaxed mb-stack-lg">
+                    Crafted with passion, our perfumes speak before you say a word. Join our journey into the world of fine scents.
+                </p>
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-metallic-gold cursor-pointer hover:opacity-80 transition-opacity">public</span>
+<span class="material-symbols-outlined text-metallic-gold cursor-pointer hover:opacity-80 transition-opacity">mail</span>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-caps text-label-caps text-metallic-gold uppercase tracking-widest mb-stack-lg">Quick Links</h4>
+<ul class="space-y-3">
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Home</a></li>
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Watches</a></li>
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Fragrances</a></li>
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-caps text-label-caps text-metallic-gold uppercase tracking-widest mb-stack-lg">Support</h4>
+<ul class="space-y-3">
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-body-sm text-ivory-white/50 hover:text-metallic-gold transition-colors" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-caps text-label-caps text-metallic-gold uppercase tracking-widest mb-stack-lg">Join Our Family</h4>
+<form class="relative">
+<input class="w-full bg-surface-container-low border-0 border-b border-graphite-gray py-4 focus:border-metallic-gold focus:ring-0 text-ivory-white font-body-sm" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 bottom-4 text-metallic-gold hover:translate-x-2 transition-transform" type="submit">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+<div class="mt-section-gap border-t border-graphite-gray/20 pt-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+<p class="font-body-sm text-body-sm text-ivory-white/50 uppercase tracking-widest">© 2024 REHAN MALIK. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-stack-lg grayscale opacity-40">
+<!-- Payment Icons Mockup -->
+<div class="w-10 h-6 bg-ivory-white/20 rounded-sm"></div>
+<div class="w-10 h-6 bg-ivory-white/20 rounded-sm"></div>
+<div class="w-10 h-6 bg-ivory-white/20 rounded-sm"></div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and scroll reveals
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.scroll-reveal');
+            
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            reveals.forEach(el => observer.observe(el));
+
+            // FAQ Accordion Logic
+            const accordionButtons = document.querySelectorAll('section button.w-full');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const isOpen = !content.classList.contains('max-h-0');
+                    
+                    // Close others
+                    accordionButtons.forEach(other => {
+                        other.nextElementSibling.classList.add('max-h-0');
+                        other.nextElementSibling.classList.remove('max-h-96', 'opacity-100');
+                        other.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+                    });
+
+                    if (!isOpen) {
+                        content.classList.remove('max-h-0');
+                        content.classList.add('max-h-96', 'opacity-100');
+                        button.querySelector('.material-symbols-outlined').style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>
